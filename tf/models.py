@@ -25,7 +25,7 @@ class User(models.Model):
 
 
 class Post(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.IntegerField(primary_key=True)
     user = models.ForeignKey(
         'User',
         related_name='posts',
